@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  ai-system:
+    build: .
+    container_name: superteam-ai
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TWITTER_API_KEY=${TWITTER_API_KEY}
+      - TWITTER_API_SECRET=${TWITTER_API_SECRET}
+      - TWITTER_ACCESS_TOKEN=${TWITTER_ACCESS_TOKEN}
+      - TWITTER_ACCESS_SECRET=${TWITTER_ACCESS_SECRET}
+      - LOCAL_LLM_PATH=/app/models/llama2/
+      - EMBEDDINGS_PATH=/app/models/embeddings/
+      - DOCUMENTS_DIR=/app/data/documents/
+      - MEMBER_DATABASE=/app/data/member_database.json
+      - VECTOR_DB_PATH=/app/data/vector_db/
+      - LOG_FILE=/app/logs/system.log
+    command: bash scripts/start_services.sh

@@ -1,0 +1,19 @@
+# Core dependencies
+fastapi==0.95.2
+uvicorn==0.22.0
+python-dotenv==1.0.0
+python-telegram-bot==20.3
+tweepy==4.14.0
+transformers==4.30.2
+sentence-transformers==2.2.2
+faiss-cpu==1.7.4
+PyPDF2==3.0.1
+python-docx==0.8.11
+Jinja2==3.1.2
+
+# Testing dependencies
+pytest==7.3.1
+pytest-mock==3.10.0
+
+# Logging
+loguru==0.7.0
