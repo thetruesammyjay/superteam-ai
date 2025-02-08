@@ -67,7 +67,7 @@ The system is built using the following technologies:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/thetruesanmmyjay/superteam-ai.git
+git clone https://github.com/thetruesammyjay/superteam-ai.git
 cd superteam-ai
 ```
 ### 2. Install Dependencies
@@ -81,8 +81,6 @@ pip install -r requirements.txt
 
 ### **3. Set Up Environment Variables**
 
-```markdown
-### Set Up Environment Variables
 
 Create a `.env` file in the root directory and add the following variables:
 
@@ -114,28 +112,26 @@ LOG_FILE=logs/system.log
 
 ### **4. Set Up Data and Models**
 
-```markdown
-### Set Up Data and Models
 
-1. Create the `data/` and `models/` folders:
+
+1. **Create the `data/` and `models/` folders**:
    ```bash
    mkdir -p data/documents data/vector_db logs models/llama2 models/embeddings
    ```
-2. Add the following files:
+2. **Add the following files**:
 
-data/member_database.json: JSON database of Superteam members.
+- data/member_database.json: JSON database of Superteam members.
 
-models/llama2/: Local LLM model files (e.g., LLaMA 2).
+- models/llama2/: Local LLM model files (e.g., LLaMA 2).
 
-models/embeddings/: Pre-trained embeddings for semantic search.
+- models/embeddings/: Pre-trained embeddings for semantic search.
 
 
 ---
 
 ### **5. Run the System**
 
-```markdown
-### Run the System
+
 
 1. Start the Telegram bot:
    ```bash
@@ -145,10 +141,9 @@ models/embeddings/: Pre-trained embeddings for semantic search.
 
 ---
 
-### **Usage**
+### **6. Usage**
 
-```markdown
-## Usage
+
 
 ### Telegram Knowledge Portal Bot
 - Interact with the bot on Telegram.
@@ -163,10 +158,9 @@ models/embeddings/: Pre-trained embeddings for semantic search.
 
 ---
 
-### **API Documentation**
+### **7. API Documentation**
 
-```markdown
-## API Documentation
+
 
 ### 1. Telegram Bot API
 - **Endpoint**: `/telegram/send_message`
@@ -194,14 +188,11 @@ models/embeddings/: Pre-trained embeddings for semantic search.
   {
   "query": "Find a Rust developer"
   }
-
+  ```
 
 ---
 
-### **Testing**
-
-```markdown
-## Testing
+### **8. Testing**
 
 Run all tests using pytest:
 ```bash
@@ -210,10 +201,9 @@ pytest tests/
 
 ---
 
-### **Configuration**
+### **9. Configuration**
 
-```markdown
-## Configuration
+
 
 The `config.py` file centralizes all configuration settings. Key configurations include:
 - Telegram and Twitter API keys.
@@ -221,7 +211,7 @@ The `config.py` file centralizes all configuration settings. Key configurations 
 - Data directories for documents, member database, and vector database.
 
 
-### **File Structure**
+### **10. File Structure**
 
 ```markdown
 superteam-ai/
@@ -249,7 +239,9 @@ superteam-ai/
 ├── .env                        # Environment variables
 └── README.md                   # Project documentation
 ```
-## Docker Deployment
+
+---
+## **10. Docker Deployment**
 
 ### 1. Build the Docker Image
 ```bash
@@ -272,10 +264,9 @@ docker-compose down
 
 ---
 
-### **Contributing**
+### **11. Contributing**
 
-```markdown
-## Contributing
+
 
 Contributions are welcome! Please follow these steps:
 1. Fork the repository.
@@ -284,6 +275,7 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature-branch`).
 5. Open a pull request.
 
-## License
+---
+### **12. License**
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
